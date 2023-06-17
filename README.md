@@ -1,6 +1,23 @@
-# Source code files for Javascript section of the personal blog
+# What is Babel js?
 
-Personal blog at: [https://brain2life.hashnode.dev/](https://brain2life.hashnode.dev/)
+Original article at: 
 
-## Table of contents:
-1. [What is Babel js?](../../tree/what-is-babeljs)
+## Tested on:
+[Node v20.2.0](https://nodejs.org/en)
+
+## Commands:
+1. Install dependencies:
+```shell
+npm install --save-dev @babel/core @babel/cli
+npm install --save-dev @babel/preset-env
+```
+2. Configure `.babelrc` file:
+```
+{
+  "presets": ["@babel/preset-env"]
+}
+```
+3. Run Babel CLI:
+```shell
+npx babel script.js --out-file compiled.js
+```
